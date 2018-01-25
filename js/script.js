@@ -33,17 +33,19 @@
     colorDisplay.textContent = pickedColor;
     for (var i = 0; i <squares.length; i++) {
       squares[i].style.background = colors[i];
-      squares[i].style.display = "block";
+      squares[i].style.display   = "block";
     }
   });
   resetButton.addEventListener("click",function(){
     colors = generateRandomColors(numSquares);
     pickedColor = pickColor();
     colorDisplay.textContent = pickedColor;
+    this.textContent = "New Colors"
+
     for (var i = 0; i < squares.length; i++) {
       squares[i].style.background = colors[i];
     }
-    h1.style.background = "#232323";
+    h1.style.background = "steelblue";
   })
 
   colorDisplay.textContent = pickedColor;
