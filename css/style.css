@@ -75,5 +75,6 @@ button{
 }
 
   button: hover{
-
+  color: white;
+  background: steelblue;
   }
